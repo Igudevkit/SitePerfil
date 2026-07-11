@@ -1,0 +1,167 @@
+      @font-face {
+        font-family: 'Press Start 2P';
+        src: url('../assets/font/PressStart2P-Regular.ttf') format('truetype');
+        font-display: swap;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --bg: #1a1c2c;
+        --panel: #2b2f4a;
+        --border: #000;
+        --text: #f5f5f5;
+        --secondary: #b8b8b8;
+        --green: #6ee16e;
+        --blue: #65b8ff;
+        --yellow: #ffd84d;
+      }
+
+      body {
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.03) 1px,
+            transparent 1px
+          ),
+          var(--bg);
+        background-size: 16px 16px;
+        color: var(--text);
+        font-family: "Press Start 2P", monospace;
+        font-size: 12px;
+        line-height: 2;
+      }
+
+      header {
+        max-width: 900px;
+        margin: auto;
+        padding: 70px 20px 40px;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+      }
+
+      .avatar {
+    width: 140px;
+    height: 140px;
+    background-image: url("../assets/assets to index/ft-de-perfil.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 4px solid var(--border);
+    box-shadow: 8px 8px 0 #000;
+      }
+
+      .info h1 {
+        font-size: 28px;
+        color: var(--green);
+        margin-bottom: 15px;
+      }
+
+      .info h2 {
+        color: var(--yellow);
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
+
+      .info p {
+        color: var(--secondary);
+        max-width: 600px;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 25px;
+      }
+
+      .links a {
+        color: var(--blue);
+        text-decoration: none;
+        padding: 10px 14px;
+        border: 3px solid var(--border);
+        background: var(--panel);
+        box-shadow: 4px 4px 0 #000;
+        transition: 0.1s;
+      }
+
+      .links a:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px 0 #000;
+      }
+
+      main {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      section {
+        margin: 40px 0;
+        background: var(--panel);
+        border: 4px solid var(--border);
+        padding: 22px;
+        box-shadow: 8px 8px 0 #000;
+      }
+
+      h3 {
+        color: var(--green);
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 3px dashed #666;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .skill {
+        background: #3f4569;
+        border: 3px solid var(--border);
+        padding: 10px 12px;
+      }
+
+      .project {
+        background: #3b3f61;
+        border: 3px solid var(--border);
+        padding: 18px;
+        margin-bottom: 20px;
+      }
+
+      .project h4 {
+        color: var(--yellow);
+        margin-bottom: 10px;
+      }
+
+      .project p {
+        color: var(--secondary);
+        margin-bottom: 12px;
+      }
+
+      .project a {
+        color: var(--blue);
+        text-decoration: none;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 12px;
+      }
+
+      footer {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        color: #888;
+      }
