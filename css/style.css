@@ -128,6 +128,21 @@
         padding: 10px 12px;
       }
 
+      .ferramentas {
+        background: #3f4569;
+        border: 3px solid var(--border);
+        padding: 10px 12px;
+        color: var(--blue);
+        text-decoration: none;
+        box-shadow: 4px 4px 0 #000;
+        transition: 0.1s;
+      }
+
+      .ferramentas:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px 0 #000;
+      }
+
       .project {
         background: #3b3f61;
         border: 3px solid var(--border);

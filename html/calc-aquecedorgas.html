@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/calculadora.css">
+
+<title>Calculadora de Potência do Aquecedor</title>
+
+</head>
+
+<body>
+
+<main>
+  <section class="calculadora">
+
+    <h3>Calculadora de Potência do Aquecedor</h3>
+    <h5>Atenção: Os valores inseridos devem ser levando em conta o pior cenário</h5>
+
+    <div class="grid">
+
+      <div class="campo">
+        <label>Temperatura de Entrada (°C)</label>
+        <input id="tempEntrada" type="number" value="20">
+      </div>
+
+      <div class="campo">
+        <label>Temperatura Desejada (°C)</label>
+        <input id="tempPainel" type="number" value="45">
+      </div>
+
+      <div class="campo">
+        <label>Vazão da Ducha (L/min)</label>
+        <input id="vazaoDucha" type="number" value="12">
+      </div>
+
+      <div class="campo">
+        <label>Quantidade de Duchas</label>
+        <input id="qtdDucha" type="number" value="1">
+      </div>
+
+      <div class="campo">
+        <label>Vazão da Torneira (L/min)</label>
+        <input id="vazaoTorneira" type="number" value="0">
+      </div>
+
+      <div class="campo">
+        <label>Quantidade de Torneiras</label>
+        <input id="qtdTorneira" type="number" value="0">
+      </div>
+
+    </div>
+
+    <div class="resultados">
+
+      <div class="resultado">
+        <span>ΔT</span>
+        <div class="valor" id="deltaT">25 °C</div>
+      </div>
+
+      <div class="resultado">
+        <span>Vazão Total</span>
+        <div class="valor" id="vazaoTotal">12 L/min</div>
+      </div>
+
+      <div class="resultado">
+        <span>Potência</span>
+        <div class="valor" id="potencia">300 kcal/min</div>
+      </div>
+
+      <div class="resultado">
+        <span>Potência Etiqueta</span>
+        <div class="valor" id="etiqueta">15 L/min</div>
+      </div>
+
+    </div>
+
+    <div class="links">
+          <a href="../index.html">Home/voltar</a>
+    </div>
+
+  </section>
+</main>
+<script src="../js/calc-aquecedorgas.js"></script>
+</body>
+</html>
